@@ -1,0 +1,24 @@
+.img-fluid {
+      width: 40%;
+      height: auto;
+      border-radius: 4px;
+      text-align: left;
+      box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+
+}
+
+.poster {
+      height: 100%;
+      object-fit: cover;
+}
+
+.form-container {
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1 {
+      margin-bottom: 20px;
+}
