@@ -14,12 +14,12 @@ $mail = new PHPMailer(true);
 try {
     //Server settings
     $phpmailer = new PHPMailer();
-    $phpmailer->isSMTP();
-    $phpmailer->Host = 'live.smtp.mailtrap.io';
-    $phpmailer->SMTPAuth = true;
-    $phpmailer->Port = 587;
-    $phpmailer->Username = 'api';
-    $phpmailer->Password = 'b15b4a77c6600f7e8a9593eb9d69c425';                                //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+$phpmailer->isSMTP();
+$phpmailer->Host = 'live.smtp.mailtrap.io';
+$phpmailer->SMTPAuth = true;
+$phpmailer->Port = 587;
+$phpmailer->Username = 'api';
+$phpmailer->Password = 'b15b4a77c6600f7e8a9593eb9d69c425';                                //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
     $mail->setFrom('cavidc253@gmail.com', 'MailerCavid');

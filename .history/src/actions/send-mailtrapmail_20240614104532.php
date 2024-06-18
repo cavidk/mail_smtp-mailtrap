@@ -15,20 +15,23 @@ try {
     //Server settings
     $phpmailer = new PHPMailer();
     $phpmailer->isSMTP();
-    $phpmailer->Host = 'live.smtp.mailtrap.io';
+    $phpmailer->Host = 'sandbox.smtp.mailtrap.io';
     $phpmailer->SMTPAuth = true;
-    $phpmailer->Port = 587;
-    $phpmailer->Username = 'api';
-    $phpmailer->Password = 'b15b4a77c6600f7e8a9593eb9d69c425';                                //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    $phpmailer->Port = 2525;
+    $phpmailer->Username = 'bfb15da4d26070';  
+    $phpmailer->Password = '********2dde';                                  //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('cavidc253@gmail.com', 'MailerCavid');
-    $mail->addAddress('cavidc253@gmail.com', 'Cavid User');     //Add a recipient
-    $mail->addAddress('cavidc253@gmail.com');               //Name is optional
+    $mail->setFrom('from@gps.com', 'Mailer');
+    $mail->addAddress('cavid@example.net', 'Joe User');     //Add a recipient
+    $mail->addAddress('cavid@example.com');               //Name is optional
+    $mail->addReplyTo('info@example.com', 'Information');
+    $mail->addCC('cc@example.com');
+    $mail->addBCC('bcc@example.com');
 
     //Attachments
-    $mail->addAttachment('/Users/cavidkazimzada/web HTML exercises/sign_registration/src/image/3817256.jpg');         //Add attachments
-    $mail->addAttachment('/Users/cavidkazimzada/web HTML exercises/sign_registration/src/image/3817256.jpg');    //Optional name
+    $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
+    $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML

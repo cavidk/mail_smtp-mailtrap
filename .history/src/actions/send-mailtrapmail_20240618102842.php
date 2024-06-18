@@ -22,9 +22,9 @@ try {
     $phpmailer->Password = 'b15b4a77c6600f7e8a9593eb9d69c425';                                //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('cavidc253@gmail.com', 'MailerCavid');
-    $mail->addAddress('cavidc253@gmail.com', 'Cavid User');     //Add a recipient
-    $mail->addAddress('cavidc253@gmail.com');               //Name is optional
+    $mail->setFrom('cavidK@gps.az', 'MailerCavid');
+    $mail->addAddress('cavidK@gps.az', 'Cavid User');     //Add a recipient
+    $mail->addAddress('cavidk@gps.az');               //Name is optional
 
     //Attachments
     $mail->addAttachment('/Users/cavidkazimzada/web HTML exercises/sign_registration/src/image/3817256.jpg');         //Add attachments

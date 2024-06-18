@@ -15,7 +15,7 @@ try {
     //Server settings
     $phpmailer = new PHPMailer();
     $phpmailer->isSMTP();
-    $phpmailer->Host = 'live.smtp.mailtrap.io';
+    $phpmailer->Host = 'sandbox.smtp.mailtrap.io';
     $phpmailer->SMTPAuth = true;
     $phpmailer->Port = 587;
     $phpmailer->Username = 'api';
