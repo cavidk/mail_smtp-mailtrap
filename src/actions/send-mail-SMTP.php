@@ -52,17 +52,17 @@ $mail->Port = 587;
 
 
 
-$mail->Username = "cavidc253@gmail.com";
-$mail->Password = 'ajej zvbw mikz rpvr';
+$mail->Username = "mailer@gmail.com";
+$mail->Password = '*****';
 
  
-$mail->setFrom($mail->Username, 'Cavid Kazimov');
-$mail->addAddress('cavid.kazimov.98@bk.ru', 'Cavid Kazimov');
-$mail->addAddress('CavidK@gps.az', 'Cavid Kazimov GPS');
+$mail->setFrom($mail->Username, 'Test Mailer');
+$mail->addAddress('testmailer@gmail.com', 'Mailer Test');
+$mail->addAddress('testmailer@gmail.com', 'Mailer Test');
 
     //Attachments
-    $mail->addAttachment("/Users/cavidkazimzada/web HTML exercises/sign_registration/src/image/3817256.jpg");         //Add attachments
-    $mail->addAttachment('/Users/cavidkazimzada/web HTML exercises/sign_registration/src/image/3817256.jpg', '3817256.jpg');    //Optional name
+    $mail->addAttachment("/path to file");         //Add attachments
+    $mail->addAttachment('/path to file');    //Optional name
 
 $mail->Subject = $subject;
 $mail->Body = $message;
