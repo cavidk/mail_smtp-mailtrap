@@ -19,7 +19,7 @@ try {
     $phpmailer->SMTPAuth = true;
     $phpmailer->Port = 587;
     $phpmailer->Username = 'api';
-    $phpmailer->Password = 'b15b4a77c6600f7e8a9593eb9d69c425';                                //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    $phpmailer->Password = '';                                //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
     $mail->setFrom('yourmail@gmail.com', 'Mailer_name');
